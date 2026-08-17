@@ -4,91 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Shuchen Pu — Ph.D. student at USTC working on AI for Science, multi-agent systems, and LLM reinforcement learning." />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Shuchen Pu" />
+    <meta name="theme-color" content="#f7f8fb" />
+    <meta property="og:title" content="Shuchen Pu | 蒲书宸" />
     <meta property="og:description" content="Ph.D. student · AI for Science" />
     <meta property="og:image" content="avator.png" />
-    <title>Shuchen Pu</title>
+    <title>Shuchen Pu | 蒲书宸</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
-      <a class="brand" href="#top">Shuchen Pu <span>蒲书宸</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#research">Research</a>
-        <a href="#publications">Papers</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </header>
+    <header class="mobile-header"><a href="#top">Shuchen Pu</a><button class="menu" aria-expanded="false">Menu</button></header>
+    <div class="layout" id="top">
+      <aside class="sidebar" aria-label="Profile">
+        <img class="avatar" src="avator.png" alt="Portrait of Shuchen Pu" width="960" height="1280" />
+        <h1>Shuchen Pu</h1>
+        <p class="chinese">蒲书宸</p>
+        <p class="role">Ph.D. Student<br />University of Science and Technology of China</p>
+        <ul class="profile-meta">
+          <li>Shanghai, China</li>
+          <li><a href="mailto:pushuchen@pjlab.org.cn">pushuchen@pjlab.org.cn</a></li>
+          <li><a href="https://github.com/komusama0930" target="_blank" rel="noreferrer">GitHub</a></li>
+        </ul>
+        <nav class="side-nav" aria-label="Page navigation">
+          <a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#awards">Honors</a><a href="#education">Education</a><a href="#projects">Projects</a>
+        </nav>
+      </aside>
 
-    <main id="top">
-      <section class="intro" aria-labelledby="name">
-        <div>
-          <p class="kicker">Ph.D. student · AI for Science</p>
-          <h1 id="name">Shuchen Pu</h1>
-          <p class="pronunciation">蒲书宸 · /ʃuːtʃən puː/</p>
-          <p class="summary">
-            I am a Ph.D. student at the University of Science and Technology of China,
-            advised by Prof. Wanli Ouyang and jointly mentored by Dr. Shufei Zhang.
-            I study agentic AI and reinforcement learning for language models, with a
-            focus on reliable scientific reasoning.
-          </p>
-          <div class="links">
-            <a href="mailto:pushuchen@pjlab.org.cn">Email</a>
-            <a href="https://github.com/komusama0930" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <main>
+        <section id="about" class="intro section">
+          <p class="eyebrow">AI for Science · Multi-agent systems · LLM RL</p>
+          <h2>Hi, I’m Shuchen.</h2>
+          <p>I am a Ph.D. student at the University of Science and Technology of China (USTC), advised by Prof. <strong>Wanli Ouyang</strong> and jointly mentored by Dr. <strong>Shufei Zhang</strong>. My current work focuses on multi-agent systems and reinforcement learning for large language models, especially for scientific reasoning.</p>
+          <p>Before my Ph.D., I received a B.E. in Artificial Intelligence from Huazhong University of Science and Technology (HUST). During my undergraduate studies, I worked with Prof. <strong>Renzhi Lu</strong> on time-series forecasting and Bayesian methods, and with Prof. <strong>Shan Tan</strong> on medical imaging. I later explored PXRD/EPR spectrum analysis, diffusion models, and diffusion-model reinforcement fine-tuning.</p>
+          <p>Feel free to reach out if you are interested in AI for Science, agentic systems, or LLM post-training.</p>
+        </section>
+
+        <section id="news" class="section">
+          <h2>🔥 News</h2>
+          <ul class="news-list">
+            <li><time>2026.06</time> Co-authored <a href="https://arxiv.org/abs/2606.18648" target="_blank" rel="noreferrer">Deep Research in Physical Sciences</a>, a multi-agent framework and benchmark for scientific reasoning.</li>
+            <li><time>2025.10</time> Co-authored <a href="https://arxiv.org/abs/2510.16880" target="_blank" rel="noreferrer">Chem-R</a>, a chemical reasoning model with reinforcement learning.</li>
+            <li><time>2025.08</time> Co-authored <a href="https://arxiv.org/abs/2508.18124" target="_blank" rel="noreferrer">CMPhysBench</a>, a benchmark for LLMs in condensed-matter physics.</li>
+            <li><time>2025</time> Started Ph.D. studies at USTC and joined the AI for Science research community in Shanghai.</li>
+          </ul>
+        </section>
+
+        <section id="publications" class="section">
+          <h2>📝 Publications</h2>
+          <div class="publication-list">
+            <article><p class="badge">2026 · arXiv</p><h3>Deep Research in Physical Sciences: A Multi-Agent Framework and Comprehensive Benchmark</h3><p>Yigeng Jiang, Tengchao Yang, …, <strong>Shuchen Pu</strong>, …, Shufei Zhang.</p><div class="actions"><a href="https://arxiv.org/abs/2606.18648" target="_blank" rel="noreferrer">Paper</a></div></article>
+            <article><p class="badge">2025 · arXiv</p><h3>Chem-R: Learning to Reason as a Chemist</h3><p>Weida Wang, Benteng Chen, Di Zhang, Wanhao Liu, <strong>Shuchen Pu</strong>, …, Wanli Ouyang, …, Shufei Zhang.</p><div class="actions"><a href="https://arxiv.org/abs/2510.16880" target="_blank" rel="noreferrer">Paper</a></div></article>
+            <article><p class="badge">2025 · arXiv</p><h3>CMPhysBench: A Benchmark for Evaluating Large Language Models in Condensed Matter Physics</h3><p>Weida Wang, Dongchen Huang, …, <strong>Shuchen Pu</strong>, …, Wanli Ouyang, …, Shufei Zhang.</p><div class="actions"><a href="https://arxiv.org/abs/2508.18124" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/CMPhysBench/CMPhysBench" target="_blank" rel="noreferrer">Code</a></div></article>
           </div>
-        </div>
-        <img src="avator.png" alt="Portrait of Shuchen Pu" width="960" height="1280" />
-      </section>
+        </section>
 
-      <section id="research" class="section" aria-labelledby="research-title">
-        <p class="label">01 — Research</p>
-        <h2 id="research-title">Current interests</h2>
-        <div class="research-grid">
-          <article><h3>Agentic AI</h3><p>Multi-agent systems for long-horizon, tool-using scientific work.</p></article>
-          <article><h3>LLM reinforcement learning</h3><p>Post-training methods for more capable and reliable reasoning.</p></article>
-          <article><h3>Generative AI for science</h3><p>Diffusion models and learning systems for materials and chemistry.</p></article>
-        </div>
-      </section>
+        <section id="awards" class="section">
+          <h2>🏅 Honors &amp; awards</h2>
+          <ul class="compact-list"><li>Hubei Second Prize, China Undergraduate Mathematical Contest in Modeling</li><li>Honorable Mention, Mathematical Contest in Modeling</li><li>Academic Excellence Scholarship and Outstanding Student Leader Scholarship, HUST</li></ul>
+        </section>
 
-      <section class="section history" aria-labelledby="history-title">
-        <p class="label">02 — Background</p>
-        <h2 id="history-title">A short path here</h2>
-        <div class="timeline">
-          <article><p>2025 — present</p><div><h3>Ph.D., USTC</h3><p>Researching multi-agent systems, LLM reinforcement learning, and scientific reasoning under the guidance of Wanli Ouyang and Shufei Zhang.</p></div></article>
-          <article><p>Undergraduate research</p><div><h3>Time-series forecasting &amp; Bayesian methods</h3><p>Advised by Renzhi Lu at HUST. Studied deep-kernel and variational Gaussian processes, Bayesian optimization, and contributed to an electricity-load forecasting project.</p></div></article>
-          <article><p>Undergraduate research</p><div><h3>Imaging &amp; materials spectroscopy</h3><p>Advised by Shan Tan at HUST. Built foundations in image segmentation and recognition; later worked on PXRD/EPR analysis, diffusion models, and reinforcement fine-tuning.</p></div></article>
-          <article><p>2021 — 2025</p><div><h3>B.E. in Artificial Intelligence, HUST</h3><p>School of Artificial Intelligence and Automation. Hubei Second Prize in the China Undergraduate Mathematical Contest in Modeling; Honorable Mention in the Mathematical Contest in Modeling.</p></div></article>
-        </div>
-      </section>
+        <section id="education" class="section">
+          <h2>📖 Education &amp; research</h2>
+          <div class="timeline">
+            <article><time>2025 — present</time><div><h3>Ph.D. student · USTC</h3><p>Advised by Wanli Ouyang; jointly mentored by Shufei Zhang. Researching multi-agent systems, LLM reinforcement learning, and AI for Science.</p></div></article>
+            <article><time>2021 — 2025</time><div><h3>B.E. in Artificial Intelligence · HUST</h3><p>School of Artificial Intelligence and Automation. Undergraduate research in time-series forecasting, Gaussian processes, Bayesian optimization, medical imaging, and materials spectroscopy.</p></div></article>
+          </div>
+        </section>
 
-      <section id="publications" class="section" aria-labelledby="publications-title">
-        <p class="label">03 — Publications</p>
-        <h2 id="publications-title">Selected work</h2>
-        <div class="paper-list">
-          <a href="https://arxiv.org/abs/2606.18648" target="_blank" rel="noreferrer"><span>2026</span><div><h3>Deep Research in Physical Sciences</h3><p>A multi-agent framework and benchmark for scientific reasoning.</p></div><b>arXiv ↗</b></a>
-          <a href="https://arxiv.org/abs/2510.16880" target="_blank" rel="noreferrer"><span>2025</span><div><h3>Chem-R: Learning to Reason as a Chemist</h3><p>A chemical reasoning model with reinforcement learning.</p></div><b>arXiv ↗</b></a>
-          <a href="https://arxiv.org/abs/2508.18124" target="_blank" rel="noreferrer"><span>2025</span><div><h3>CMPhysBench</h3><p>A benchmark for evaluating LLMs in condensed-matter physics.</p></div><b>arXiv ↗</b></a>
-        </div>
-      </section>
-
-      <section id="projects" class="section" aria-labelledby="projects-title">
-        <p class="label">04 — Open source</p>
-        <h2 id="projects-title">Selected repositories</h2>
-        <div class="project-list">
-          <a href="https://github.com/komusama0930/SimXRD" target="_blank" rel="noreferrer"><span>01</span><div><h3>SimXRD</h3><p>GPU-accelerated tools for simulating X-ray diffraction patterns.</p></div><b>GitHub ↗</b></a>
-          <a href="https://github.com/Bin-Cao/awesome-xrd2crystal" target="_blank" rel="noreferrer"><span>02</span><div><h3>Awesome XRD to Crystal</h3><p>A curated knowledge map of PXRD-driven crystal identification, generation, decomposition, and refinement.</p></div><b>Contributor ↗</b></a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <span>© <span id="year"></span> Shuchen Pu</span>
-      <a href="#top">Back to top ↑</a>
-    </footer>
+        <section id="projects" class="section">
+          <h2>🧩 Selected projects</h2>
+          <div class="project-grid">
+            <a class="project-card" href="https://github.com/komusama0930/SimXRD" target="_blank" rel="noreferrer"><span>Open source</span><h3>SimXRD</h3><p>GPU-accelerated tools for simulating X-ray diffraction patterns.</p><b>View on GitHub →</b></a>
+            <a class="project-card" href="https://github.com/Bin-Cao/awesome-xrd2crystal" target="_blank" rel="noreferrer"><span>Contributor</span><h3>Awesome XRD to Crystal</h3><p>A curated knowledge map for PXRD-driven crystal identification, generation, decomposition, and refinement.</p><b>Explore repository →</b></a>
+          </div>
+        </section>
+        <footer>© <span id="year"></span> Shuchen Pu · <a href="#top">Back to top ↑</a></footer>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
